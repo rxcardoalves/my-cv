@@ -1,2 +1,2 @@
 # my-cv
-A static cv built early in my bootcamp.
+A webpage version of my CV,
