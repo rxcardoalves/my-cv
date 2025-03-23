@@ -189,3 +189,12 @@ ul li::marker {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #00594f;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
