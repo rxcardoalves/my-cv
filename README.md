@@ -1,2 +1,2 @@
 # my-cv
-A webpage version of my CV,
+A webpage version of my CV.
