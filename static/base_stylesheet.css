@@ -1,5 +1,8 @@
-body {
+html, body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .navbar-nav p {
@@ -191,7 +194,7 @@ ul li::marker {
 }
 
 .footer-container {
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-color: #00594f;
     text-align: center;
