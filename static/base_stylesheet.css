@@ -194,7 +194,12 @@ ul li::marker {
 }
 
 .footer-container {
-    width: 100%;
+    width: 100vw; /* Full viewport width */
     background-color: #00594f;
     text-align: center;
+    padding: 20px 0;
+    position: relative; /* Ensure it sits at the bottom of content */
+    left: 0;
+    bottom: 0;
 }
+
