@@ -11,6 +11,7 @@ body {
     max-width: 1000px;
     margin: auto;
     padding: 10px;
+    padding-bottom: 0px;
     background: black;
     border: solid #00594f;
     border-radius: 20px;
@@ -29,7 +30,6 @@ header {
 .about-box {
     flex: 70%;
     padding: 15px;
-    padding-bottom: 0px;
     color: #808080;
 }
 
@@ -37,8 +37,6 @@ header {
     flex: 30%;
     width: 300px;
     padding: 15px;
-    padding-bottom: 0px;
-    background-color: black;
     border-radius: 8px;
     text-align: center;
     font-size: 14px;
