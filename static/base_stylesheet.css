@@ -1,0 +1,191 @@
+body {
+    background-color: black;
+}
+
+.navbar-nav p {
+    margin: 0 15px;
+    color: #cedc00;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background: black;
+    border: solid #00594f;
+    border-radius: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-box {
+    flex: 70%;
+    padding: 15px;
+    padding-bottom: 0px;
+    color: #808080;
+}
+
+.contact-box {
+    flex: 30%;
+    width: 300px;
+    padding: 15px;
+    padding-bottom: 0px;
+    background-color: black;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+}
+
+img {
+    width: 190px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: top;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #808080;
+    border-bottom: 2px solid #00594f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p, ul {
+    font-size: 16px;
+    color: #808080;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cedc00;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-name {
+    font-weight: bold;
+    color: #808080;
+}
+
+.line {
+    font-weight: bold;
+    margin: 5px;
+    color: #00594f;
+}
+
+.position, .job-date {
+    font-size: 16px;
+    font-weight: normal;
+    color: #808080;
+}
+
+.job-date {
+    margin-left: auto;
+    text-align: right;
+    width: 250px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    list-style-type: circle;
+    color: #808080;
+}
+
+ul li::marker {
+    color: #cedc00;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.column h2 {
+    border-bottom: 2px solid #00594f;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.column {
+    width: 50%;
+}
+
+.column ul {
+    padding-left: 20px;
+}
+
+.column ul li {
+    list-style-type: circle;
+    color: #808080;
+}
+
+.column ul li::marker {
+    color: #cedc00;
+}
+
+.job.other-roles ul {
+    padding-left: 20px;
+}
+
+.job.other-roles ul li {
+    list-style-type: circle;
+    list-style-position: outside;
+    padding-left: 0;
+    position: relative;
+}
+
+.job.other-roles .role-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.references ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.references ul li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
