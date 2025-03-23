@@ -1,197 +1,250 @@
-{% extends 'base_temp.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MyStory.co.za{% endblock %}</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
+    rel="stylesheet">
+    <link href="static/base_stylesheet.css" rel="stylesheet">
+</head>
 
-{% block title %}CV - Rycardo Simoes Alves{% endblock %}
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-sm" style="background-color: #00594f;">
+        <!-- Navbar toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-{% block content %}
-<link href="static/base_stylesheet.css" rel="stylesheet">
-<div class="cv-container">
-    <header class="header-container">
-         <div class="about-box">
-            <h1>Rycardo Simoes Alves</h1>
-            <p><span>Ambitious</span> <span class="line">|</span> <span>Efficient</span> <span class="line">|</span> <span>Proactive</span></p>
-            <p>
-                Over the years, I've developed a strong work ethic and a deep sense of responsibility, applying these to every project I take on.
-                I'm driven, detail-oriented, and committed to delivering high-quality results. My experience has sharpened my ability to adapt quickly,
-                learn new skills, and contribute effectively. I take pride in my work and strive to exceed expectations.
-            </p>
-        </div>
-
-        <div class="contact-box">
-            <img src="static/images/profile_pic.png" alt="Profile Picture">
-            <p style="text-align: center;"> <span class="line">---</span> <i class="bi bi-geo-alt" style="color: #cedc00;"></i> Cape Town <span class="line">---</span></p>
-        </div>
-    </header>
-    
-    <section class="experience">
-        <h2>Work Experience</h2>
-
-        <div class="job">
-            <h3>
-                <span class="company-name">Sorrento Studio</span> 
-                <span class="line">|</span> 
-                <span class="position">Operations Manager</span> 
-                <span class="job-date">Oct 2024 - Present</span>
-            </h3>
-            <ul>
-                <li>Staff Management</li>
-                <li>Warehouse management, repairs, organizing, and maintenance</li>
-                <li>Vehicle service and maintenance</li>
-                <li>Coordinate with the Business Analyst, Event Coordinators, Florists, Maintenance team, warehouse staff, drivers, suppliers, and clients</li>
-                <li>Implement, improve, and maintain new processes</li>
-                <li>Stock Management, counts, and audits by introduction of RFID’s</li>
-                <li>Optimize storage and layout solutions</li>
-                <li>Event set-up and breakdowns</li>
-                <li>Arrange staff transport outside of business hours</li>
-                <li>Deliveries and Collections Management</li>
-                <li>HR – staff timekeeping and overtime, PPE use, and uniform adherence, health and safety compliance</li>
-                <li>Planning of event logistics and staff requirements</li>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <p><i class="bi bi-telephone"></i> <a href="tel:+27727775577">+27 72 777 5577</a></p>
+                <p><i class="bi bi-envelope"></i> <a href="mailto:rsimoesalves@gmail.com">rsimoesalves@gmail.com</a></p>
+                <p><i class="bi bi-linkedin"></i> 
+                    <a href="https://www.linkedin.com/in/rycardo-simoes-alves/" 
+                    target="_blank">/rycardo-simoes-alves/</a>
+                </p>
+                <p><i class="bi bi-instagram"></i> <a href="https://instagram.com/rxcardoalves" target="_blank">@rxcardoalves</a></p>
+                <p><i class="bi bi-download"></i> <a href="static/pdf/Rycardo Simoes Alves - 2025.pdf">Download CV</a>
+                </div>
             </ul>
-        </div>
+        </div> 
+    </nav>
 
-        <div class="job">
-            <h3><span class="company-name">GVI</span> <span class="line">|</span> <span class="position">Group Support Coordinator</span> <span class="job-date">Feb 2023 - Aug 2024</span></h3>
-            <ul>
-                <li>Pre-Departure Support and processing of documentation</li>
-                <li>Updating and maintaining the CRM system (Salesforce)</li>
-                <li>Setting up and managing payment schedules</li>
-                <li>Processing EFT, Stripe, and PayFast payments</li>
-                <li>Managing payment reminders, collections, and overdue follow-ups</li>
-                <li>Handling incoming and outgoing group support calls</li>
-                <li>Converting leads into opportunities</li>
-                <li>Expectation management and delivering webinar presentations</li>
-                <li>Communicating with in-country teams worldwide</li>
-                <li>Providing emergency phone support</li>
-                <li>Creating and sharing detailed reports</li>
-                <li>Assisting in administrative tasks and other duties as required</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <h3><span class="company-name">Jukwaa Events</span> <span class="line">|</span> <span class="position">Operations & Participant Manager</span> <span class="job-date">Jan 2021 - Aug 2022</span></h3>
-            <ul>
-                <li>Operations and Logistics management for events</li>
-                <li>Infrastructure and Supplier Procurement</li>
-                <li>Event Build-Up and Breakdown coordination</li>
-                <li>Route Planning for events, including Sasol Solar Challenge</li>
-                <li>Participant Support: Registration, Scoring, and Handling Queries</li>
-                <li>Conceptualizing and testing the "Last Man Standing" App</li>
-            </ul>
-        </div>
-
-        <div class="job other-roles">
-            <h3><span class="company-name">Other Roles</span></h3>
-            <ul>
-                <li>
-                    <span class="role-container">
-                        <span class="company-name">Jukwaa Events</span> 
-                        <span class="line">|</span> 
-                        <span class="position">Project Coordinator</span> 
-                        <span class="job-date">2019-2020</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="role-container">
-                        <span class="company-name">Jukwaa Events</span> 
-                        <span class="line">|</span> 
-                        <span class="position">Event Assistant</span> 
-                        <span class="job-date">2018</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="role-container">
-                        <span class="company-name">CrossFit Uhuru</span> 
-                        <span class="line">|</span> 
-                        <span class="position">CrossFit Manager</span> 
-                        <span class="job-date">2019-2021</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="role-container">
-                        <span class="company-name">Yachts</span> 
-                        <span class="line">|</span> 
-                        <span class="position">Deck/Stew</span> 
-                        <span class="job-date">2017-2018</span>
-                    </span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="job columns">
-            <div class="column">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Health & Fitness</li>
-                    <li>Formula 1 & Motorsport</li>
-                    <li>IT, Programming & App Development</li>
-                    <li>Problem Solving & Mind Puzzles</li>
-                    <li>Travel & Languages</li>
-                </ul>
+    <div class="container mt-4 py-1">
+        <div class="cv-container">
+            <header class="header-container">
+                 <div class="about-box">
+                    <h1>Rycardo Simoes Alves</h1>
+                    <p><span>Ambitious</span> <span class="line">|</span> <span>Efficient</span> <span class="line">|</span> <span>Proactive</span></p>
+                    <p>
+                        Over the years, I've developed a strong work ethic and a deep sense of responsibility, applying these to every project I take on.
+                        I'm driven, detail-oriented, and committed to delivering high-quality results. My experience has sharpened my ability to adapt quickly,
+                        learn new skills, and contribute effectively. I take pride in my work and strive to exceed expectations.
+                    </p>
+                </div>
         
-                <h2>Licenses & Certification</h2>
-                <ul>
-                    <li>Software Engineering (HyperionDev) - In Progress</li>
-                    <li>EFR - Primary Care (CPR) & Secondary Care</li>
-                    <li>- Event Architecture Bootcamp</li>
-                    <li>Python for Non-Programmers</li>
-                    <li>Getting Started as a Full-Stack Web Developer</li>
-                    <li>Python Essential Training</li>
-                    <li>Programming Foundations: Fundamentals</li>
-                    <li>HTML Essential Training</li>
-                    <li>Python for Non-Programmers</li>
-                    <li>Getting Started as a Full-Stack Web Developer</li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <h2>Computer Literacy</h2>
-                <ul>
-                    <li>Microsoft Office Suite</li>
-                    <li>Google Workspace</li>
-                    <li>Sage One & Sage Pay</li>
-                    <li>NetCash</li>
-                    <li>Google Earth Pro</li>
-                    <li>Slack</li>
-                    <li>Salesforce</li>
-                    <li>Trello</li>
-                    <li>Stripe & Payfast</li>
-                    <li>Booqable</li>
-                </ul>
-
-                <h2>Other Details</h2>
-                <ul>
-                    <li>Matric Certificate 2016</li>
-                    <li>Valid Drivers License (own transport)</li>
-                    <li>Good Health</li>
-                    <li>Bilingual</li>
-                    <li>Engaged</li>
-                </ul>
-            </div>
-        </div>
-
-    <section class="references">
-        <div class="job" style="text-align: center;">
-            <h2>References</h2>
-            <ul>
-                <li>
-                    <span class="role-container">
-                        <span class="company-name">Kayleigh Sutherland</span> 
+                <div class="contact-box">
+                    <img src="static/images/profile_pic.png" alt="Profile Picture">
+                    <p style="text-align: center;"> <span class="line">---</span> <i class="bi bi-geo-alt" style="color: #cedc00;"></i> Cape Town <span class="line">---</span></p>
+                </div>
+            </header>
+            
+            <section class="experience">
+                <h2>Work Experience</h2>
+        
+                <div class="job">
+                    <h3>
+                        <span class="company-name">Sorrento Studio</span> 
                         <span class="line">|</span> 
-                        <span class="position">Groups Project Manager - GVI</span> 
-                        <span class="line">|</span>
-                        <span class="job-date">+27 64 908 2127</span>
-                    </span>
-                </li>
-                <li>
-                    <span class="role-container">
-                        <span class="company-name">Anshia Oldewage</span> 
-                        <span class="line">|</span> 
-                        <span class="position">Executive Assistant - Jukwaa Events</span> 
-                        <span class="line">|</span>
-                        <span class="job-date">+27 78 019 0624</span>
-                    </span>
-                </li>
-            </ul>
+                        <span class="position">Operations Manager</span> 
+                        <span class="job-date">Oct 2024 - Present</span>
+                    </h3>
+                    <ul>
+                        <li>Staff Management</li>
+                        <li>Warehouse management, repairs, organizing, and maintenance</li>
+                        <li>Vehicle service and maintenance</li>
+                        <li>Coordinate with the Business Analyst, Event Coordinators, Florists, Maintenance team, warehouse staff, drivers, suppliers, and clients</li>
+                        <li>Implement, improve, and maintain new processes</li>
+                        <li>Stock Management, counts, and audits by introduction of RFID’s</li>
+                        <li>Optimize storage and layout solutions</li>
+                        <li>Event set-up and breakdowns</li>
+                        <li>Arrange staff transport outside of business hours</li>
+                        <li>Deliveries and Collections Management</li>
+                        <li>HR – staff timekeeping and overtime, PPE use, and uniform adherence, health and safety compliance</li>
+                        <li>Planning of event logistics and staff requirements</li>
+                    </ul>
+                </div>
+        
+                <div class="job">
+                    <h3><span class="company-name">GVI</span> <span class="line">|</span> <span class="position">Group Support Coordinator</span> <span class="job-date">Feb 2023 - Aug 2024</span></h3>
+                    <ul>
+                        <li>Pre-Departure Support and processing of documentation</li>
+                        <li>Updating and maintaining the CRM system (Salesforce)</li>
+                        <li>Setting up and managing payment schedules</li>
+                        <li>Processing EFT, Stripe, and PayFast payments</li>
+                        <li>Managing payment reminders, collections, and overdue follow-ups</li>
+                        <li>Handling incoming and outgoing group support calls</li>
+                        <li>Converting leads into opportunities</li>
+                        <li>Expectation management and delivering webinar presentations</li>
+                        <li>Communicating with in-country teams worldwide</li>
+                        <li>Providing emergency phone support</li>
+                        <li>Creating and sharing detailed reports</li>
+                        <li>Assisting in administrative tasks and other duties as required</li>
+                    </ul>
+                </div>
+        
+                <div class="job">
+                    <h3><span class="company-name">Jukwaa Events</span> <span class="line">|</span> <span class="position">Operations & Participant Manager</span> <span class="job-date">Jan 2021 - Aug 2022</span></h3>
+                    <ul>
+                        <li>Operations and Logistics management for events</li>
+                        <li>Infrastructure and Supplier Procurement</li>
+                        <li>Event Build-Up and Breakdown coordination</li>
+                        <li>Route Planning for events, including Sasol Solar Challenge</li>
+                        <li>Participant Support: Registration, Scoring, and Handling Queries</li>
+                        <li>Conceptualizing and testing the "Last Man Standing" App</li>
+                    </ul>
+                </div>
+        
+                <div class="job other-roles">
+                    <h3><span class="company-name">Other Roles</span></h3>
+                    <ul>
+                        <li>
+                            <span class="role-container">
+                                <span class="company-name">Jukwaa Events</span> 
+                                <span class="line">|</span> 
+                                <span class="position">Project Coordinator</span> 
+                                <span class="job-date">2019-2020</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="role-container">
+                                <span class="company-name">Jukwaa Events</span> 
+                                <span class="line">|</span> 
+                                <span class="position">Event Assistant</span> 
+                                <span class="job-date">2018</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="role-container">
+                                <span class="company-name">CrossFit Uhuru</span> 
+                                <span class="line">|</span> 
+                                <span class="position">CrossFit Manager</span> 
+                                <span class="job-date">2019-2021</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="role-container">
+                                <span class="company-name">Yachts</span> 
+                                <span class="line">|</span> 
+                                <span class="position">Deck/Stew</span> 
+                                <span class="job-date">2017-2018</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="job columns">
+                    <div class="column">
+                        <h2>Interests</h2>
+                        <ul>
+                            <li>Health & Fitness</li>
+                            <li>Formula 1 & Motorsport</li>
+                            <li>IT, Programming & App Development</li>
+                            <li>Problem Solving & Mind Puzzles</li>
+                            <li>Travel & Languages</li>
+                        </ul>
+                
+                        <h2>Licenses & Certification</h2>
+                        <ul>
+                            <li>Software Engineering (HyperionDev) - In Progress</li>
+                            <li>EFR - Primary Care (CPR) & Secondary Care</li>
+                            <li>- Event Architecture Bootcamp</li>
+                            <li>Python for Non-Programmers</li>
+                            <li>Getting Started as a Full-Stack Web Developer</li>
+                            <li>Python Essential Training</li>
+                            <li>Programming Foundations: Fundamentals</li>
+                            <li>HTML Essential Training</li>
+                            <li>Python for Non-Programmers</li>
+                            <li>Getting Started as a Full-Stack Web Developer</li>
+                        </ul>
+                    </div>
+        
+                    <div class="column">
+                        <h2>Computer Literacy</h2>
+                        <ul>
+                            <li>Microsoft Office Suite</li>
+                            <li>Google Workspace</li>
+                            <li>Sage One & Sage Pay</li>
+                            <li>NetCash</li>
+                            <li>Google Earth Pro</li>
+                            <li>Slack</li>
+                            <li>Salesforce</li>
+                            <li>Trello</li>
+                            <li>Stripe & Payfast</li>
+                            <li>Booqable</li>
+                        </ul>
+        
+                        <h2>Other Details</h2>
+                        <ul>
+                            <li>Matric Certificate 2016</li>
+                            <li>Valid Drivers License (own transport)</li>
+                            <li>Good Health</li>
+                            <li>Bilingual</li>
+                            <li>Engaged</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            <section class="references">
+                <div class="job" style="text-align: center;">
+                    <h2>References</h2>
+                    <ul>
+                        <li>
+                            <span class="role-container">
+                                <span class="company-name">Kayleigh Sutherland</span> 
+                                <span class="line">|</span> 
+                                <span class="position">Groups Project Manager - GVI</span> 
+                                <span class="line">|</span>
+                                <span class="job-date">+27 64 908 2127</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="role-container">
+                                <span class="company-name">Anshia Oldewage</span> 
+                                <span class="line">|</span> 
+                                <span class="position">Executive Assistant - Jukwaa Events</span> 
+                                <span class="line">|</span>
+                                <span class="job-date">+27 78 019 0624</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>
-</div>
-{% endblock %}
+    <footer class="footer-container mt-4 py-1" style="background-color: #00594f;">
+    <div class="container text-center">
+        <h1 style="font-size: 36px; color: #cedc00;">
+                <i>"Do more than just exist" - unknown</i>
+        </h1>
+    </div>        
+    </footer>
+
+    <!-- Bootstrap JS for interactivity -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
